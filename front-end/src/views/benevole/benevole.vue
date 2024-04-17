@@ -41,7 +41,7 @@
 
                 <div class="grid grid-cols-2 gap-5 my-7 w-[90%] mx-auto">
                     <div v-for="event in events" :key="event.id">
-                        <div class=" bg-gray-800  ">
+                        <div class=" bg-gray-800   rounded-lg">
                             <div class="ml-3 md:mt-0 md:ml-6 sm:ml-3 pr-1">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>

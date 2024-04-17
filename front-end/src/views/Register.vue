@@ -52,11 +52,14 @@
             type="submit">
             Sign In
           </button>
-          <a class="inline-block align-baseline font-bold text-sm text-[#EEBB07] hover:text-[#EEBB07]/70" href="#">
-            Forgot Password?
-          </a>
+
         </div>
       </form>
+      <div class="text-center w-full">
+        Have Account ? <router-link to="/" class="block ml-4 mt-4
+            lg:inline-block lg:mt-0 text-[#4B4B4B]
+            hover:text-[#eebb07]">login here</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -83,13 +86,12 @@ export default {
           password: this.password,
           role: this.role,
         });
-console.log(response);
+        console.log(response);
         if (response.status === 200) {
           router.push("/");
-          redire
         } else {
           console.error("Registration failed:", response.statusText);
-          router.push("/register"); 
+          router.push("/register");
 
         }
       } catch (error) {
@@ -98,4 +100,5 @@ console.log(response);
     },
   },
 };
+
 </script>

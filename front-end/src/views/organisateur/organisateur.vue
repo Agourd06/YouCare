@@ -36,8 +36,8 @@
 
                 <div class="grid grid-cols-2 gap-5 my-7 w-[90%] mx-auto">
                     <div v-for="event in events" :key="event.id">
-                        <div class=" bg-gray-800  ">
-                            <div class="ml-3 md:mt-0 md:ml-6 sm:ml-3 pr-1">
+                        <div class=" bg-gray-800  rounded-lg">
+                            <div class="ml-3 md:mt-0 md:ml-6 sm:ml-3 pr-1 ">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <div
@@ -45,7 +45,7 @@
                                             {{ event.title }}
                                         </div>
                                         <div
-                                            class="text-gray-100 mb-4 uppercase tracking-wide text-md md:text-lg text-600 font-bold cardheading">
+                                            class="text-gray-100 mb-4 uppercase tracking-wide flex gap-5 text-md md:text-lg text-600 font-bold cardheading">
                                             <i class="material-icons">
                                                 {{ event.type }}
                                             </i>
@@ -63,12 +63,7 @@
                                 <p class="mb-2 mt-2 mr-6 text-sm md:text-md text-gray-300 md:w-3/4 lg:w-3/4 ">
                                     {{ event.description }}
                                 </p>
-                                <div class="w-full flex justify-center items-end md:justify-end h-12 mb-2">
-                                    <a
-                                        class="flex items-center justify-center cursor-pointer h-8 bg-transparent uppercase hover:bg-red-500 text-gray-100 font-semibold hover:text-black w-full text-xs md:text-md border-2 border-red-500 hover:border-transparent mb-2 mr-4">
-                                        More
-                                    </a>
-                                </div>
+                               
 
                             </div>
                             <div class="flex text-white">

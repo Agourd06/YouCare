@@ -27,13 +27,18 @@
 
         <div class="flex items-center justify-between">
           <button
-            class="bg-blue-600 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="bg-[#eebb07] hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit">
             Sign In
           </button>
          
         </div>
       </form>
+      <div class="text-center w-full">
+       Dont't Have Account ? <router-link to="/register" class="block ml-4 mt-4
+            lg:inline-block lg:mt-0 text-[#4B4B4B]
+            hover:text-[#eebb07]">register here</router-link>
+      </div>
     </div>
   </div>
 </template>
